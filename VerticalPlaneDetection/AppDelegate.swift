@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  VerticalPlaneDetection
 //
-//  Created by Gregory Chiste on 1/27/18.
-//  Copyright © 2018 Gregory Chiste. All rights reserved.
+//  Created by Pramod Majhi on 06/09/18.
+//  Copyright © 2018 Pramod Majhi. All rights reserved.
 //
 
 import UIKit
