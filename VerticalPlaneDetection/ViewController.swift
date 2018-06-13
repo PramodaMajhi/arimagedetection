@@ -132,6 +132,10 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, UI
         
         if !hitLocation.isEmpty {
             print("tapped the screen")
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            
+            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "MenuViewController")
+            self.present(nextViewController, animated:true, completion:nil)
           
         }
         
