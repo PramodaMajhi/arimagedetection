@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:VerticalPlaneDetection.xcodeproj">
+      location = "self:/Users/pramoda/BscProject/2D-Mesh-Plane-Detection/BSC-AR-DEMO.xcodeproj">
    </FileRef>
 </Workspace>
