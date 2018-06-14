@@ -131,7 +131,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, UI
         let hitLocation = ARView.hitTest(touchPoint, types: .existingPlaneUsingExtent)
         
         if !hitLocation.isEmpty {
-            print("tapped the screen")
+            print("tapped 3D icon")
             let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
             
             let nextViewController = storyBoard.instantiateViewController(withIdentifier: "MenuViewController")
