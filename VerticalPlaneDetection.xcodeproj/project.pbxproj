@@ -16,6 +16,10 @@
 		CD4A869520CF01A80074CE17 /* salman.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4A869320CF01A80074CE17 /* salman.png */; };
 		CD4A869720CF27A30074CE17 /* grilledchickensald.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4A869620CF27A30074CE17 /* grilledchickensald.png */; };
 		CD4A869B20D090EC0074CE17 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4A869A20D090EC0074CE17 /* MenuViewController.swift */; };
+		CDFC737C20D1ED06002DA360 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFC737B20D1ED06002DA360 /* PayViewController.swift */; };
+		CDFC737E20D20816002DA360 /* FaceIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFC737D20D20816002DA360 /* FaceIdViewController.swift */; };
+		CDFC738020D2094E002DA360 /* PayCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFC737F20D2094E002DA360 /* PayCompleteViewController.swift */; };
+		CDFC738220D20A27002DA360 /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFC738120D20A27002DA360 /* RewardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		CD4A869320CF01A80074CE17 /* salman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = salman.png; path = ../../../Downloads/salman.png; sourceTree = "<group>"; };
 		CD4A869620CF27A30074CE17 /* grilledchickensald.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grilledchickensald.png; path = ../../../Downloads/grilledchickensald.png; sourceTree = "<group>"; };
 		CD4A869A20D090EC0074CE17 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		CDFC737B20D1ED06002DA360 /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
+		CDFC737D20D20816002DA360 /* FaceIdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIdViewController.swift; sourceTree = "<group>"; };
+		CDFC737F20D2094E002DA360 /* PayCompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayCompleteViewController.swift; sourceTree = "<group>"; };
+		CDFC738120D20A27002DA360 /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +76,10 @@
 				37B1FFE0201D66C500D5C2C5 /* AppDelegate.swift */,
 				37B1FFE2201D66C500D5C2C5 /* ViewController.swift */,
 				CD4A869A20D090EC0074CE17 /* MenuViewController.swift */,
+				CDFC737B20D1ED06002DA360 /* PayViewController.swift */,
+				CDFC737D20D20816002DA360 /* FaceIdViewController.swift */,
+				CDFC737F20D2094E002DA360 /* PayCompleteViewController.swift */,
+				CDFC738120D20A27002DA360 /* RewardViewController.swift */,
 				37B1FFE4201D66C500D5C2C5 /* Main.storyboard */,
 				37B1FFE7201D66D200D5C2C5 /* Assets.xcassets */,
 				37B1FFE9201D66D200D5C2C5 /* LaunchScreen.storyboard */,
@@ -150,9 +162,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDFC737E20D20816002DA360 /* FaceIdViewController.swift in Sources */,
+				CDFC738220D20A27002DA360 /* RewardViewController.swift in Sources */,
 				37B1FFE3201D66C500D5C2C5 /* ViewController.swift in Sources */,
 				CD4A869B20D090EC0074CE17 /* MenuViewController.swift in Sources */,
 				37B1FFE1201D66C500D5C2C5 /* AppDelegate.swift in Sources */,
+				CDFC738020D2094E002DA360 /* PayCompleteViewController.swift in Sources */,
+				CDFC737C20D1ED06002DA360 /* PayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

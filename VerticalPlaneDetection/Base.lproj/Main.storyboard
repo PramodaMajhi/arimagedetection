@@ -63,6 +63,10 @@
                             </pageControl>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zTd-PU-S4t">
                                 <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="g9X-Nz-Jw3" appends="YES" id="blF-1i-T0f"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -83,8 +87,170 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2b3-Lu-ncq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="g9X-Nz-Jw3">
+                    <connections>
+                        <action selector="imageTap:" destination="p1q-ee-C9w" id="lUB-sT-Ecv"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="880.79999999999995" y="85.714285714285722"/>
         </scene>
+        <!--Pay View Controller-->
+        <scene sceneID="39W-F2-OlR">
+            <objects>
+                <viewController storyboardIdentifier="PayViewController" id="bwN-5s-hWW" customClass="PayViewController" customModule="VerticalPlaneDetection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DFq-Y6-KIj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6t1-nu-ohv">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="DcX-xm-S92" appends="YES" id="BGK-8G-Hja"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6t1-nu-ohv" firstAttribute="top" secondItem="Spc-yv-zee" secondAttribute="top" id="UcL-Kj-F97"/>
+                            <constraint firstItem="Spc-yv-zee" firstAttribute="trailing" secondItem="6t1-nu-ohv" secondAttribute="trailing" id="Zu9-t7-tNc"/>
+                            <constraint firstItem="6t1-nu-ohv" firstAttribute="leading" secondItem="Spc-yv-zee" secondAttribute="leading" id="bXs-Ht-Q7a"/>
+                            <constraint firstItem="Spc-yv-zee" firstAttribute="bottom" secondItem="6t1-nu-ohv" secondAttribute="bottom" id="igq-vQ-eCc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Spc-yv-zee"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="6t1-nu-ohv" id="zJd-ys-IZs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HxM-jJ-vxa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="DcX-xm-S92">
+                    <connections>
+                        <action selector="confirm:" destination="bwN-5s-hWW" id="s4U-99-Wo2"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1720" y="96"/>
+        </scene>
+        <!--Face Id View Controller-->
+        <scene sceneID="aiP-Zz-Qn8">
+            <objects>
+                <viewController storyboardIdentifier="FaceIdViewController" id="8tx-dV-U2L" customClass="FaceIdViewController" customModule="VerticalPlaneDetection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YZg-3n-daN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="faceiddetection" translatesAutoresizingMaskIntoConstraints="NO" id="WLk-ep-0sh">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="7Q8-wP-TXA" appends="YES" id="dXA-9t-0X0"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0uT-jw-VF0" firstAttribute="trailing" secondItem="WLk-ep-0sh" secondAttribute="trailing" id="a0f-UU-bea"/>
+                            <constraint firstItem="WLk-ep-0sh" firstAttribute="leading" secondItem="0uT-jw-VF0" secondAttribute="leading" id="fIU-n4-ctK"/>
+                            <constraint firstItem="0uT-jw-VF0" firstAttribute="bottom" secondItem="WLk-ep-0sh" secondAttribute="bottom" id="ld8-uf-ipz"/>
+                            <constraint firstItem="WLk-ep-0sh" firstAttribute="top" secondItem="0uT-jw-VF0" secondAttribute="top" id="p2C-z3-8PG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0uT-jw-VF0"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="WLk-ep-0sh" id="Lew-JD-xU8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U3L-7z-vIx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="7Q8-wP-TXA">
+                    <connections>
+                        <action selector="faceIdDetected:" destination="8tx-dV-U2L" id="Clg-iS-rX2"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2457" y="95"/>
+        </scene>
+        <!--Pay Complete View Controller-->
+        <scene sceneID="ONo-wx-qvj">
+            <objects>
+                <viewController storyboardIdentifier="PayCompleteViewController" id="K2D-fZ-ujh" customClass="PayCompleteViewController" customModule="VerticalPlaneDetection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sR8-HV-TRt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paymentsuccess" translatesAutoresizingMaskIntoConstraints="NO" id="CJw-pS-Opw">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="RiC-oD-gZO" appends="YES" id="xQH-gT-CH6"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NKd-Po-rkt" firstAttribute="bottom" secondItem="CJw-pS-Opw" secondAttribute="bottom" id="0xG-4p-oOC"/>
+                            <constraint firstItem="NKd-Po-rkt" firstAttribute="trailing" secondItem="CJw-pS-Opw" secondAttribute="trailing" id="QJf-Wo-F2t"/>
+                            <constraint firstItem="CJw-pS-Opw" firstAttribute="leading" secondItem="NKd-Po-rkt" secondAttribute="leading" id="Yuo-dO-4Dl"/>
+                            <constraint firstItem="CJw-pS-Opw" firstAttribute="top" secondItem="NKd-Po-rkt" secondAttribute="top" id="ta9-g3-Dhz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NKd-Po-rkt"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="CJw-pS-Opw" id="moB-Hc-xDq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8qC-Af-dDC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="RiC-oD-gZO">
+                    <connections>
+                        <action selector="tapClose:" destination="K2D-fZ-ujh" id="Lui-6B-ftF"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3188" y="81"/>
+        </scene>
+        <!--Reward View Controller-->
+        <scene sceneID="sbx-a3-bHh">
+            <objects>
+                <viewController storyboardIdentifier="RewardViewController" id="WXa-KT-2lU" customClass="RewardViewController" customModule="VerticalPlaneDetection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Xf-oy-8Fb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="credit" translatesAutoresizingMaskIntoConstraints="NO" id="lxz-ud-waG">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="tGj-2s-6e1" appends="YES" id="95H-oc-H8Q"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lxz-ud-waG" firstAttribute="leading" secondItem="ysa-Rj-GpB" secondAttribute="leading" id="TKe-TD-7b3"/>
+                            <constraint firstItem="ysa-Rj-GpB" firstAttribute="bottom" secondItem="lxz-ud-waG" secondAttribute="bottom" id="hem-Ds-DPJ"/>
+                            <constraint firstItem="ysa-Rj-GpB" firstAttribute="trailing" secondItem="lxz-ud-waG" secondAttribute="trailing" id="hoM-3X-cio"/>
+                            <constraint firstItem="lxz-ud-waG" firstAttribute="top" secondItem="ysa-Rj-GpB" secondAttribute="top" id="igL-wn-g3W"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ysa-Rj-GpB"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="lxz-ud-waG" id="iuD-st-1HP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NcC-NU-5ut" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="tGj-2s-6e1">
+                    <connections>
+                        <action selector="tapClose:" destination="WXa-KT-2lU" id="eTz-Vh-rOi"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3880" y="80"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="credit" width="726" height="1090"/>
+        <image name="faceiddetection" width="733" height="626"/>
+        <image name="paymentsuccess" width="720" height="448"/>
+    </resources>
 </document>

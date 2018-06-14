@@ -45,13 +45,15 @@ class MenuViewController: UIViewController, UIScrollViewDelegate {
        // print(scrollViewHeight)
         
         let imgOne = UIImageView(frame: CGRect(x:33, y:0,width:309, height:scrollViewHeight))
-        imgOne.image = UIImage(named: "Grilled Chicken Salad")
+        imgOne.image = UIImage(named: "Stuffed Bell Peppers")
         
         let imgTwo = UIImageView(frame: CGRect(x:33+scrollViewWidth, y:0,width:309, height:scrollViewHeight))
-        imgTwo.image = UIImage(named: "Stuffed Bell Peppers")
+        imgTwo.image = UIImage(named: "Grilled Chicken Salad")
         
         let imgThree = UIImageView(frame: CGRect(x:33+scrollViewWidth*2, y:0,width:309, height:scrollViewHeight))
         imgThree.image = UIImage(named: "Salmon Salad")
+        
+        
         
         self.scrollView.addSubview(imgOne)
         self.scrollView.addSubview(imgTwo)
@@ -63,6 +65,18 @@ class MenuViewController: UIViewController, UIScrollViewDelegate {
         
         self.pageControl.currentPage = 0
 
+    }
+    
+    
+    @IBAction func imageTap(_ sender: UITapGestureRecognizer) {
+        
+        print("Menu selected")
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "PayViewController")
+        self.present(nextViewController, animated:true, completion:nil)
+        
+        
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
