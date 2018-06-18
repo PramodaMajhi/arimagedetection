@@ -138,6 +138,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, UI
 //            self.present(nextViewController, animated:true, completion:nil)
 //
 //        }
+        
         print("tapped 3D icon")
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         
