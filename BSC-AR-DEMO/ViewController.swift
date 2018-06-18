@@ -100,6 +100,19 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, UI
                     
                }
             }
+            if imageName == "barchamenu2" {
+                DispatchQueue.main.async {
+                   
+                    let cube = SCNNode()
+                    cube.geometry = SCNBox(width: 0.15, height: 0.15, length: 0.15, chamferRadius: 0)
+                    cube.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "Dinner Item 1.png")
+                    //UIColor.green.withAlphaComponent(0.6)
+                    cube.position = SCNVector3(0, 0.2, 0.1)
+                    node.addChildNode(cube)
+                    self.ARView.scene.rootNode.addChildNode(node)
+                    print("image defected " + imageName)
+                }
+            }
             
         }
         
@@ -128,7 +141,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, UI
     
     func displayScroll (touchPoint: CGPoint) {
         //calling hitTest for our AR scene view and storing the results in "hitlocation", using .existingPlaneUsingExtent since we already set up image detection, this will yield better precission and accuracy of our hit test.
-        let hitLocation = ARView.hitTest(touchPoint, types: .existingPlaneUsingExtent)
+        //let hitLocation = ARView.hitTest(touchPoint, types: .existingPlaneUsingExtent)
         
 //        if !hitLocation.isEmpty {
 //            print("tapped 3D icon")

@@ -18,7 +18,7 @@ class PayViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.imageView.image = UIImage(named: "payment")
+        self.imageView.image = UIImage(named: "Payment Methods")
     }
 
     override func didReceiveMemoryWarning() {

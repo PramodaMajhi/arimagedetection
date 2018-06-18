@@ -19,7 +19,7 @@ class FaceIdViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-         self.imageView.image = UIImage(named: "faceiddetection")
+         self.imageView.image = UIImage(named: "Face ID")
     }
 
     

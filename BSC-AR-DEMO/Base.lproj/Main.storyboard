@@ -57,12 +57,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pageControl opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="347-9n-dhR">
-                                <rect key="frame" x="0.0" y="741" width="375" height="37"/>
+                            <pageControl opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="347-9n-dhR">
+                                <rect key="frame" x="0.0" y="778" width="375" height="0.0"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                             </pageControl>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bh5-nW-vOP">
-                                <rect key="frame" x="0.0" y="275" width="375" height="406"/>
+                                <rect key="frame" x="0.0" y="275" width="375" height="443"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="9JX-DN-MJW" appends="YES" id="hLe-j1-fSD"/>
@@ -111,7 +111,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="payment" translatesAutoresizingMaskIntoConstraints="NO" id="6t1-nu-ohv">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Payment Methods" translatesAutoresizingMaskIntoConstraints="NO" id="6t1-nu-ohv">
                                 <rect key="frame" x="0.0" y="152" width="375" height="626"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -157,7 +157,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="faceiddetection" translatesAutoresizingMaskIntoConstraints="NO" id="WLk-ep-0sh">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Face ID" translatesAutoresizingMaskIntoConstraints="NO" id="WLk-ep-0sh">
                                 <rect key="frame" x="0.0" y="172" width="375" height="606"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -254,7 +254,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="credit" translatesAutoresizingMaskIntoConstraints="NO" id="lxz-ud-waG">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Achievement" translatesAutoresizingMaskIntoConstraints="NO" id="lxz-ud-waG">
                                 <rect key="frame" x="0.0" y="148" width="375" height="630"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
@@ -298,9 +298,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="credit" width="726" height="1090"/>
-        <image name="faceiddetection" width="733" height="626"/>
-        <image name="payment" width="626" height="932"/>
+        <image name="Achievement" width="337" height="525"/>
+        <image name="Face ID" width="375" height="332"/>
+        <image name="Payment Methods" width="375" height="490"/>
         <image name="paymentsuccess" width="720" height="448"/>
     </resources>
 </document>

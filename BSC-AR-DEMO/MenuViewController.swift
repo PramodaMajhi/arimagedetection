@@ -27,22 +27,22 @@ class MenuViewController: UIViewController, UIScrollViewDelegate {
        // print(scrollViewHeight)
         
         let imgOne = UIImageView(frame: CGRect(x:33, y:0,width:309, height:scrollViewHeight))
-        imgOne.image = UIImage(named: "Stuffed Bell Peppers")
+        imgOne.image = UIImage(named: "Dinner Item Selected")
         
-        let imgTwo = UIImageView(frame: CGRect(x:33+scrollViewWidth, y:0,width:309, height:scrollViewHeight))
-        imgTwo.image = UIImage(named: "Grilled Chicken Salad")
-        
-        let imgThree = UIImageView(frame: CGRect(x:33+scrollViewWidth*2, y:0,width:309, height:scrollViewHeight))
-        imgThree.image = UIImage(named: "Salmon Salad")
+//        let imgTwo = UIImageView(frame: CGRect(x:33+scrollViewWidth, y:0,width:309, height:scrollViewHeight))
+//        imgTwo.image = UIImage(named: "Grilled Chicken Salad")
+//
+//        let imgThree = UIImageView(frame: CGRect(x:33+scrollViewWidth*2, y:0,width:309, height:scrollViewHeight))
+//        imgThree.image = UIImage(named: "Salmon Salad")
         
         
         
         self.scrollView.addSubview(imgOne)
-        self.scrollView.addSubview(imgTwo)
-        self.scrollView.addSubview(imgThree)
+//        self.scrollView.addSubview(imgTwo)
+//        self.scrollView.addSubview(imgThree)
        // scrollView.addGestureRecognizer(<#T##gestureRecognizer: UIGestureRecognizer##UIGestureRecognizer#>)
         
-        self.scrollView.contentSize = CGSize(width:self.scrollView.frame.width * 3, height:self.scrollView.frame.height)
+        self.scrollView.contentSize = CGSize(width:self.scrollView.frame.width * 1, height:self.scrollView.frame.height)
         self.scrollView.delegate = self
         
         self.pageControl.currentPage = 0
@@ -64,7 +64,8 @@ class MenuViewController: UIViewController, UIScrollViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
        // print(pageControl.currentPage)
-        pageControl.currentPage = Int(scrollView.contentOffset.x / CGFloat(414))
+//        pageControl.currentPage = Int(scrollView.contentOffset.x / CGFloat(414))
+         pageControl.currentPage = 0
     }
 
 
@@ -83,10 +84,10 @@ class MenuViewController: UIViewController, UIScrollViewDelegate {
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView){
         // Test the offset and calculate the current page after scrolling ends
-        let pageWidth:CGFloat = scrollView.frame.width
-        let currentPage:CGFloat = floor((scrollView.contentOffset.x-pageWidth/2)/pageWidth)+1
+        //let pageWidth:CGFloat = scrollView.frame.width
+       // let currentPage:CGFloat = floor((scrollView.contentOffset.x-pageWidth/2)/pageWidth)+1
         // Change the indicator
-        self.pageControl.currentPage = Int(currentPage);
+        self.pageControl.currentPage = 0
     }
     
 
