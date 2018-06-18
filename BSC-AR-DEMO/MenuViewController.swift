@@ -20,24 +20,6 @@ class MenuViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//        scrollView.delegate = self
-//        var images: [String] = ["StuffedBellPeppers@2x", "Grilled Chicken Salad@2x", "Salmon Salad@2x"]
-//
-//        pageControl.numberOfPages = images.count
-//
-//        for image in 0...2 {
-//
-//            let imageToDisplay = UIImage(named: images[image])
-//            let imageView = UIImageView(image: imageToDisplay)
-//            let xCoordinate = view.frame.midX + view.frame.width * CGFloat(image)
-//            contentWidth += view.frame.width
-//            scrollView.addSubview(imageView)
-//            imageView.frame = CGRect(x: xCoordinate - 50 , y: (view.frame.height/2) - 50, width: 100, height: 100)
-//        }
-//
-//        scrollView.contentSize = CGSize(width: contentWidth, height: view.frame.height)
-        
         self.scrollView.frame = CGRect(x:0, y:0, width:375, height:331)
         let scrollViewWidth:CGFloat = self.scrollView.frame.width
        // print(scrollViewWidth)
@@ -68,16 +50,17 @@ class MenuViewController: UIViewController, UIScrollViewDelegate {
     }
     
     
-    @IBAction func imageTap(_ sender: UITapGestureRecognizer) {
+    
+    
+    @IBAction func menuTapped(_ sender: UITapGestureRecognizer) {
         
         print("Menu selected")
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: "PayViewController")
         self.present(nextViewController, animated:true, completion:nil)
-        
-        
     }
+    
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
        // print(pageControl.currentPage)
