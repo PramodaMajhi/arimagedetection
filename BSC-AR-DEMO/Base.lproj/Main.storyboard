@@ -158,7 +158,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blue Bucks Increase" translatesAutoresizingMaskIntoConstraints="NO" id="WLk-ep-0sh">
-                                <rect key="frame" x="0.0" y="113" width="375" height="616"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                                 <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -178,7 +178,7 @@
                         <constraints>
                             <constraint firstItem="WLk-ep-0sh" firstAttribute="bottom" secondItem="0uT-jw-VF0" secondAttribute="bottom" id="bjD-QX-Lh3"/>
                             <constraint firstItem="WLk-ep-0sh" firstAttribute="leading" secondItem="YZg-3n-daN" secondAttribute="leading" id="ddz-pR-otJ"/>
-                            <constraint firstItem="WLk-ep-0sh" firstAttribute="top" secondItem="0uT-jw-VF0" secondAttribute="top" constant="69" id="fKb-JR-OLa"/>
+                            <constraint firstItem="WLk-ep-0sh" firstAttribute="top" secondItem="0uT-jw-VF0" secondAttribute="top" constant="-44" id="fKb-JR-OLa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0uT-jw-VF0"/>
                     </view>
@@ -303,7 +303,7 @@
     </scenes>
     <resources>
         <image name="Achievement" width="337" height="525"/>
-        <image name="Blue Bucks Increase" width="375" height="1199"/>
+        <image name="Blue Bucks Increase" width="375" height="812"/>
         <image name="Payment Methods-1" width="375" height="490"/>
         <image name="paymentsuccess" width="720" height="448"/>
     </resources>
