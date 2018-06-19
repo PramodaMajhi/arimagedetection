@@ -140,22 +140,22 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, UI
     
     func displayScroll (touchPoint: CGPoint) {
         //calling hitTest for our AR scene view and storing the results in "hitlocation", using .existingPlaneUsingExtent since we already set up image detection, this will yield better precission and accuracy of our hit test.
-        //let hitLocation = ARView.hitTest(touchPoint, types: .existingPlaneUsingExtent)
+        let hitLocation = ARView.hitTest(touchPoint, types: .existingPlaneUsingExtent)
         
-//        if !hitLocation.isEmpty {
-//            print("tapped 3D icon")
-//            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        if !hitLocation.isEmpty {
+            print("tapped 3D icon")
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+
+            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "MenuViewController")
+            self.present(nextViewController, animated:true, completion:nil)
+
+        }
+        
+       // print("tapped 3D icon")
+//        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
 //
-//            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "MenuViewController")
-//            self.present(nextViewController, animated:true, completion:nil)
-//
-//        }
-        
-        print("tapped 3D icon")
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "MenuViewController")
-        self.present(nextViewController, animated:true, completion:nil)
+//        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "MenuViewController")
+//        self.present(nextViewController, animated:true, completion:nil)
         
         
     }
