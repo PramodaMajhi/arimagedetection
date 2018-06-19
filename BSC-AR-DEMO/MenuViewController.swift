@@ -21,7 +21,7 @@ class MenuViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.scrollView.frame = CGRect(x:0, y:0, width:375, height:331)
-        let scrollViewWidth:CGFloat = self.scrollView.frame.width
+       // let scrollViewWidth:CGFloat = self.scrollView.frame.width
        // print(scrollViewWidth)
         let scrollViewHeight:CGFloat = self.scrollView.frame.height
        // print(scrollViewHeight)

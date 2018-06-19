@@ -29,8 +29,9 @@ class RewardViewController: UIViewController {
 
     @IBAction func tapClose(_ sender: UITapGestureRecognizer) {
         
-        print("closed")
-        exit(0)
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "FaceIdViewController")
+        self.present(nextViewController, animated:true, completion:nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {

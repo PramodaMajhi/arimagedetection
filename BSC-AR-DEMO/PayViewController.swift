@@ -18,7 +18,7 @@ class PayViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.imageView.image = UIImage(named: "Payment Methods")
+        self.imageView.image = UIImage(named: "Payment Methods-1")
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,7 +33,7 @@ class PayViewController: UIViewController {
        
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "FaceIdViewController")
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "PayCompleteViewController")
         self.present(nextViewController, animated:true, completion:nil)
     }
     

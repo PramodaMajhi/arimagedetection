@@ -19,17 +19,19 @@ class FaceIdViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-         self.imageView.image = UIImage(named: "Face ID")
+         self.imageView.image = UIImage(named: "Blue Bucks Increase")
     }
 
     
     @IBAction func faceIdDetected(_ sender: UITapGestureRecognizer) {
-        print("Face Id detected")
+        print("Blue Bucks Increase")
         
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+//        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+//
+//        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "PayCompleteViewController")
+//        self.present(nextViewController, animated:true, completion:nil)
         
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "PayCompleteViewController")
-        self.present(nextViewController, animated:true, completion:nil)
+        exit(0)
     }
     
     

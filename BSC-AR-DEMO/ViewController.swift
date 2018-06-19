@@ -102,15 +102,14 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, UI
             }
             if imageName == "barchamenu2" {
                 DispatchQueue.main.async {
-                   
+                    print("image defected " + imageName)
                     let cube = SCNNode()
                     cube.geometry = SCNBox(width: 0.15, height: 0.15, length: 0.15, chamferRadius: 0)
                     cube.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "Dinner Item 1.png")
                     //UIColor.green.withAlphaComponent(0.6)
                     cube.position = SCNVector3(0, 0.2, 0.1)
                     node.addChildNode(cube)
-                    self.ARView.scene.rootNode.addChildNode(node)
-                    print("image defected " + imageName)
+                    self.ARView.scene.rootNode.addChildNode(node)                  
                 }
             }
             

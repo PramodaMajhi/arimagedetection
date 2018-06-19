@@ -111,7 +111,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Payment Methods" translatesAutoresizingMaskIntoConstraints="NO" id="6t1-nu-ohv">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Payment Methods-1" translatesAutoresizingMaskIntoConstraints="NO" id="6t1-nu-ohv">
                                 <rect key="frame" x="0.0" y="152" width="375" height="626"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -157,31 +157,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Face ID" translatesAutoresizingMaskIntoConstraints="NO" id="WLk-ep-0sh">
-                                <rect key="frame" x="0.0" y="172" width="375" height="606"/>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blue Bucks Increase" translatesAutoresizingMaskIntoConstraints="NO" id="WLk-ep-0sh">
+                                <rect key="frame" x="0.0" y="113" width="375" height="616"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="7Q8-wP-TXA" appends="YES" id="dXA-9t-0X0"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYz-lz-qLt">
-                                <rect key="frame" x="15" y="44" width="91" height="47"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mco-z9-G6C">
+                                <rect key="frame" x="9" y="39" width="99" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="bwN-5s-hWW" kind="presentation" id="Mwu-ab-1zo"/>
+                                    <segue destination="WXa-KT-2lU" kind="presentation" id="vK6-he-LCh"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="WLk-ep-0sh" firstAttribute="bottom" secondItem="0uT-jw-VF0" secondAttribute="bottom" id="4KV-X6-doB"/>
-                            <constraint firstItem="WLk-ep-0sh" firstAttribute="top" secondItem="0uT-jw-VF0" secondAttribute="top" constant="128" id="Krs-Ao-JIk"/>
-                            <constraint firstAttribute="trailing" secondItem="WLk-ep-0sh" secondAttribute="trailing" id="MnJ-DG-e1c"/>
-                            <constraint firstItem="WLk-ep-0sh" firstAttribute="leading" secondItem="YZg-3n-daN" secondAttribute="leading" id="bT4-YJ-5RU"/>
+                            <constraint firstItem="WLk-ep-0sh" firstAttribute="bottom" secondItem="0uT-jw-VF0" secondAttribute="bottom" id="bjD-QX-Lh3"/>
+                            <constraint firstItem="WLk-ep-0sh" firstAttribute="leading" secondItem="YZg-3n-daN" secondAttribute="leading" id="ddz-pR-otJ"/>
+                            <constraint firstItem="WLk-ep-0sh" firstAttribute="top" secondItem="0uT-jw-VF0" secondAttribute="top" constant="69" id="fKb-JR-OLa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0uT-jw-VF0"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="0HQ-Cn-Nhh"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="imageView" destination="WLk-ep-0sh" id="Lew-JD-xU8"/>
                     </connections>
@@ -193,7 +197,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2456.8000000000002" y="94.581280788177338"/>
+            <point key="canvasLocation" x="4216.8000000000002" y="93.842364532019715"/>
         </scene>
         <!--Pay Complete View Controller-->
         <scene sceneID="ONo-wx-qvj">
@@ -217,7 +221,7 @@
                                 </constraints>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="8tx-dV-U2L" kind="presentation" id="wTR-Mw-4dY"/>
+                                    <segue destination="bwN-5s-hWW" kind="presentation" id="bqN-hr-sEm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -244,7 +248,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3181.5999999999999" y="94.581280788177338"/>
+            <point key="canvasLocation" x="2521" y="95"/>
         </scene>
         <!--Reward View Controller-->
         <scene sceneID="sbx-a3-bHh">
@@ -294,13 +298,13 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3873" y="95"/>
+            <point key="canvasLocation" x="3358" y="95"/>
         </scene>
     </scenes>
     <resources>
         <image name="Achievement" width="337" height="525"/>
-        <image name="Face ID" width="375" height="332"/>
-        <image name="Payment Methods" width="375" height="490"/>
+        <image name="Blue Bucks Increase" width="375" height="1199"/>
+        <image name="Payment Methods-1" width="375" height="490"/>
         <image name="paymentsuccess" width="720" height="448"/>
     </resources>
 </document>
