@@ -105,7 +105,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, UI
                     print("image defected " + imageName)
                     let cube = SCNNode()
                     cube.geometry = SCNBox(width: 0.15, height: 0.15, length: 0.15, chamferRadius: 0)
-                    cube.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "Dinner Item 1.png")
+                    cube.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "Dinner Item Selected")
                     //UIColor.green.withAlphaComponent(0.6)
                     cube.position = SCNVector3(0, 0.2, 0.1)
                     node.addChildNode(cube)
@@ -140,22 +140,22 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, UI
     
     func displayScroll (touchPoint: CGPoint) {
         //calling hitTest for our AR scene view and storing the results in "hitlocation", using .existingPlaneUsingExtent since we already set up image detection, this will yield better precission and accuracy of our hit test.
-        let hitLocation = ARView.hitTest(touchPoint, types: .existingPlaneUsingExtent)
-        
-        if !hitLocation.isEmpty {
-            print("tapped 3D icon")
-            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-
-            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "MenuViewController")
-            self.present(nextViewController, animated:true, completion:nil)
-
-        }
-        
-       // print("tapped 3D icon")
-//        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+//        let hitLocation = ARView.hitTest(touchPoint, types: .existingPlaneUsingExtent)
 //
-//        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "MenuViewController")
-//        self.present(nextViewController, animated:true, completion:nil)
+//        if !hitLocation.isEmpty {
+//            print("tapped 3D icon")
+//            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+//
+//            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "MenuViewController")
+//            self.present(nextViewController, animated:true, completion:nil)
+//
+//        }
+        
+        print("tapped 3D icon")
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "MenuViewController")
+        self.present(nextViewController, animated:true, completion:nil)
         
         
     }

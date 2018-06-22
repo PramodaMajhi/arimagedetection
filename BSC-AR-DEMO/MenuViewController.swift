@@ -57,7 +57,7 @@ class MenuViewController: UIViewController, UIScrollViewDelegate {
         print("Menu selected")
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "PayViewController")
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "RewardViewController")
         self.present(nextViewController, animated:true, completion:nil)
     }
     

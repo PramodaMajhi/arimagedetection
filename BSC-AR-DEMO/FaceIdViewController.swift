@@ -19,7 +19,7 @@ class FaceIdViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-         self.imageView.image = UIImage(named: "Blue Bucks Increase")
+         self.imageView.image = UIImage(named: "Blue Bucks Increase-2")
     }
 
     
