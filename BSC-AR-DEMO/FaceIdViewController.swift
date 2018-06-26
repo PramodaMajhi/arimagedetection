@@ -26,12 +26,12 @@ class FaceIdViewController: UIViewController {
     @IBAction func faceIdDetected(_ sender: UITapGestureRecognizer) {
         print("Blue Bucks Increase")
         
-//        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-//
-//        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "PayCompleteViewController")
-//        self.present(nextViewController, animated:true, completion:nil)
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "ViewController")
+        self.present(nextViewController, animated:true, completion:nil)
         
-        exit(0)
+        print("Redirected to main screen")
+       // exit(0)
     }
     
     
