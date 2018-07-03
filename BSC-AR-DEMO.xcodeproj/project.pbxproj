@@ -12,9 +12,6 @@
 		37B1FFE6201D66C500D5C2C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B1FFE4201D66C500D5C2C5 /* Main.storyboard */; };
 		37B1FFE8201D66D200D5C2C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B1FFE7201D66D200D5C2C5 /* Assets.xcassets */; };
 		37B1FFEB201D66D200D5C2C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B1FFE9201D66D200D5C2C5 /* LaunchScreen.storyboard */; };
-		CD4A869420CF01A80074CE17 /* stuffedpepper.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4A869220CF01A80074CE17 /* stuffedpepper.png */; };
-		CD4A869520CF01A80074CE17 /* salman.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4A869320CF01A80074CE17 /* salman.png */; };
-		CD4A869720CF27A30074CE17 /* grilledchickensald.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4A869620CF27A30074CE17 /* grilledchickensald.png */; };
 		CD4A869B20D090EC0074CE17 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4A869A20D090EC0074CE17 /* MenuViewController.swift */; };
 		CDFC737C20D1ED06002DA360 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFC737B20D1ED06002DA360 /* PayViewController.swift */; };
 		CDFC737E20D20816002DA360 /* FaceIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFC737D20D20816002DA360 /* FaceIdViewController.swift */; };
@@ -30,9 +27,6 @@
 		37B1FFE7201D66D200D5C2C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37B1FFEA201D66D200D5C2C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37B1FFEC201D66D200D5C2C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD4A869220CF01A80074CE17 /* stuffedpepper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stuffedpepper.png; path = ../../../Downloads/stuffedpepper.png; sourceTree = "<group>"; };
-		CD4A869320CF01A80074CE17 /* salman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = salman.png; path = ../../../Downloads/salman.png; sourceTree = "<group>"; };
-		CD4A869620CF27A30074CE17 /* grilledchickensald.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grilledchickensald.png; path = ../../../Downloads/grilledchickensald.png; sourceTree = "<group>"; };
 		CD4A869A20D090EC0074CE17 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		CDFC737B20D1ED06002DA360 /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
 		CDFC737D20D20816002DA360 /* FaceIdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIdViewController.swift; sourceTree = "<group>"; };
@@ -70,9 +64,6 @@
 		37B1FFDF201D66C500D5C2C5 /* BSC-AR-DEMO */ = {
 			isa = PBXGroup;
 			children = (
-				CD4A869620CF27A30074CE17 /* grilledchickensald.png */,
-				CD4A869320CF01A80074CE17 /* salman.png */,
-				CD4A869220CF01A80074CE17 /* stuffedpepper.png */,
 				37B1FFE0201D66C500D5C2C5 /* AppDelegate.swift */,
 				37B1FFE2201D66C500D5C2C5 /* ViewController.swift */,
 				CD4A869A20D090EC0074CE17 /* MenuViewController.swift */,
@@ -147,11 +138,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				37B1FFEB201D66D200D5C2C5 /* LaunchScreen.storyboard in Resources */,
-				CD4A869720CF27A30074CE17 /* grilledchickensald.png in Resources */,
-				CD4A869420CF01A80074CE17 /* stuffedpepper.png in Resources */,
 				37B1FFE8201D66D200D5C2C5 /* Assets.xcassets in Resources */,
 				37B1FFE6201D66C500D5C2C5 /* Main.storyboard in Resources */,
-				CD4A869520CF01A80074CE17 /* salman.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
