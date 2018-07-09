@@ -1,29 +1,30 @@
 //
-//  FaceIdViewController.swift
-//  VerticalPlaneDetection
+//  BlueBucksViewController.swift
+//  BSC-AR-DEMO
 //
-//  Created by Pramoda Majhi on 6/13/18.
-//  Copyright © 2018 Gregory Chiste. All rights reserved.
+//  Created by Pramoda Majhi on 7/9/18.
+//  Copyright © 2018 BSC. All rights reserved.
 //
 
 import UIKit
 
-class FaceIdViewController: UIViewController {
-    
-    
+class BlueBucksViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-         self.imageView.image = UIImage(named: "Blue Bucks Increase-2")
+        self.imageView.image = UIImage(named: "Blue Bucks Increase-2")
     }
 
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     
-    @IBAction func faceIdDetected(_ sender: UITapGestureRecognizer) {
+    
+    @IBAction func tappedBlue(_ sender: UITapGestureRecognizer) {
         print("Blue Bucks Increase")
         
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
@@ -31,23 +32,9 @@ class FaceIdViewController: UIViewController {
         self.present(nextViewController, animated:true, completion:nil)
         
         print("Redirected to main screen")
-       // exit(0)
     }
     
     
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-    }
     /*
     // MARK: - Navigation
 

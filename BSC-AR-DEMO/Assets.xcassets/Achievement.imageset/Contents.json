@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "newachievement.png",
+      "filename" : "Achievement Unlocked.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "newachievement2x.png",
+      "filename" : "Achievement Unlocked@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "newachievement3x.png",
+      "filename" : "Achievement Unlocked@3x.png",
       "scale" : "3x"
     }
   ],

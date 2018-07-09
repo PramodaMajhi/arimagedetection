@@ -1,24 +1,20 @@
 //
-//  RewardViewController.swift
-//  VerticalPlaneDetection
+//  AchievmentViewController.swift
+//  BSC-AR-DEMO
 //
-//  Created by Pramoda Majhi on 6/13/18.
-//  Copyright © 2018 Gregory Chiste. All rights reserved.
+//  Created by Pramoda Majhi on 7/9/18.
+//  Copyright © 2018 BSC. All rights reserved.
 //
 
 import UIKit
 
-class RewardViewController: UIViewController {
+class AchievmentViewController: UIViewController {
 
-    
-    
     @IBOutlet weak var imageView: UIImageView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+         self.imageView.image = UIImage(named: "Achievement")
         // Do any additional setup after loading the view.
-        self.imageView.image = UIImage(named: "Achievement")
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,19 +23,12 @@ class RewardViewController: UIViewController {
     }
     
 
-    @IBAction func tapClose(_ sender: UITapGestureRecognizer) {
-        
+    
+    @IBAction func tapped(_ sender: UITapGestureRecognizer) {
+        print("tapped achievement")
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "FaceIdViewController")
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "BlueBucksViewController")
         self.present(nextViewController, animated:true, completion:nil)
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
     }
     
     /*
@@ -51,5 +40,6 @@ class RewardViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
 
 }

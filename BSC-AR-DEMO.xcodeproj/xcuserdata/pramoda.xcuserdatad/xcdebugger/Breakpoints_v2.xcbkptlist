@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BSC-AR-DEMO/RewardViewController.swift"
-            timestampString = "551060419.184217"
+            timestampString = "552866415.814755"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "RewardViewController"
             landmarkType = "3">
          </BreakpointContent>

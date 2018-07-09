@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -57,158 +56,139 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pageControl opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="347-9n-dhR">
-                                <rect key="frame" x="0.0" y="778" width="375" height="0.0"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                            </pageControl>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bh5-nW-vOP">
-                                <rect key="frame" x="0.0" y="275" width="375" height="443"/>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dinner Item Selected" translatesAutoresizingMaskIntoConstraints="NO" id="7L2-aq-kzc">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="9JX-DN-MJW" appends="YES" id="hLe-j1-fSD"/>
+                                    <outletCollection property="gestureRecognizers" destination="TRY-3R-dBa" appends="YES" id="U6c-jj-Wvp"/>
                                 </connections>
-                            </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9D-SP-CJk">
-                                <rect key="frame" x="16" y="44" width="91" height="47"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sn-ql-uvb">
+                                <rect key="frame" x="253" y="44" width="122" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="VcV-le-c7m"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="EQW-qP-nnH"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Bh5-nW-vOP" firstAttribute="top" secondItem="c1e-ON-AEK" secondAttribute="top" constant="231" id="Deu-Fw-WGb"/>
-                            <constraint firstItem="Bh5-nW-vOP" firstAttribute="trailing" secondItem="347-9n-dhR" secondAttribute="trailing" id="MuB-po-jdb"/>
-                            <constraint firstItem="c1e-ON-AEK" firstAttribute="trailing" secondItem="347-9n-dhR" secondAttribute="trailing" id="R6B-v4-H4e"/>
-                            <constraint firstItem="c1e-ON-AEK" firstAttribute="bottom" secondItem="347-9n-dhR" secondAttribute="bottom" id="mMx-xU-sO2"/>
-                            <constraint firstItem="Bh5-nW-vOP" firstAttribute="leading" secondItem="347-9n-dhR" secondAttribute="leading" id="oOK-Qx-W0A"/>
-                            <constraint firstItem="347-9n-dhR" firstAttribute="top" secondItem="Bh5-nW-vOP" secondAttribute="bottom" constant="60" id="qEt-rg-hnM"/>
-                            <constraint firstItem="347-9n-dhR" firstAttribute="leading" secondItem="c1e-ON-AEK" secondAttribute="leading" id="uZR-c0-1d7"/>
+                            <constraint firstItem="7L2-aq-kzc" firstAttribute="leading" secondItem="c1e-ON-AEK" secondAttribute="leading" id="CXP-0g-zZK"/>
+                            <constraint firstItem="7L2-aq-kzc" firstAttribute="top" secondItem="c1e-ON-AEK" secondAttribute="top" id="Fst-uE-9Rc"/>
+                            <constraint firstItem="c1e-ON-AEK" firstAttribute="bottom" secondItem="7L2-aq-kzc" secondAttribute="bottom" id="VlM-g2-o3E"/>
+                            <constraint firstItem="c1e-ON-AEK" firstAttribute="trailing" secondItem="7L2-aq-kzc" secondAttribute="trailing" id="h5Y-Jr-cqh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="c1e-ON-AEK"/>
                     </view>
                     <connections>
-                        <outlet property="pageControl" destination="347-9n-dhR" id="dIC-J7-D4j"/>
-                        <outlet property="scrollView" destination="Bh5-nW-vOP" id="nSs-0u-Pdo"/>
+                        <outlet property="imageView" destination="7L2-aq-kzc" id="pD5-mj-Rgb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2b3-Lu-ncq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="9JX-DN-MJW">
+                <tapGestureRecognizer id="TRY-3R-dBa">
                     <connections>
-                        <action selector="menuTapped:" destination="p1q-ee-C9w" id="yE4-go-a0z"/>
+                        <action selector="menuTapped:" destination="p1q-ee-C9w" id="aO5-Gp-dZO"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="880.79999999999995" y="85.714285714285722"/>
         </scene>
-        <!--Face Id View Controller-->
+        <!--Blue Bucks View Controller-->
         <scene sceneID="aiP-Zz-Qn8">
             <objects>
-                <viewController storyboardIdentifier="FaceIdViewController" id="8tx-dV-U2L" customClass="FaceIdViewController" customModule="BSC_AR_DEMO" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BlueBucksViewController" id="8tx-dV-U2L" customClass="BlueBucksViewController" customModule="BSC_AR_DEMO" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YZg-3n-daN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blue Bucks Increase-2" translatesAutoresizingMaskIntoConstraints="NO" id="WLk-ep-0sh">
-                                <rect key="frame" x="0.0" y="63" width="375" height="666"/>
-                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="BlueBucksViewController" image="Blue Bucks Increase-2" translatesAutoresizingMaskIntoConstraints="NO" id="Jti-VN-lF1">
+                                <rect key="frame" x="0.0" y="44" width="375" height="685"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="7Q8-wP-TXA" appends="YES" id="dXA-9t-0X0"/>
+                                    <outletCollection property="gestureRecognizers" destination="Fqe-ze-yaY" appends="YES" id="dIY-oe-mY5"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mco-z9-G6C">
-                                <rect key="frame" x="14" y="45" width="99" height="64"/>
-                                <state key="normal" title="Back"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzk-XL-H7K">
+                                <rect key="frame" x="244" y="39" width="131" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="WXa-KT-2lU" kind="presentation" id="vK6-he-LCh"/>
+                                    <segue destination="WXa-KT-2lU" kind="presentation" id="P3k-Mz-ibz"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="WLk-ep-0sh" firstAttribute="bottom" secondItem="0uT-jw-VF0" secondAttribute="bottom" id="BeK-Gd-1vH"/>
-                            <constraint firstItem="WLk-ep-0sh" firstAttribute="leading" secondItem="YZg-3n-daN" secondAttribute="leading" id="CCT-U5-ZXc"/>
-                            <constraint firstItem="Mco-z9-G6C" firstAttribute="leading" secondItem="0uT-jw-VF0" secondAttribute="leading" constant="14" id="J8A-3f-BWj"/>
-                            <constraint firstItem="0uT-jw-VF0" firstAttribute="bottom" secondItem="Mco-z9-G6C" secondAttribute="bottom" constant="620" id="hJ5-9B-1GJ"/>
-                            <constraint firstItem="WLk-ep-0sh" firstAttribute="top" secondItem="0uT-jw-VF0" secondAttribute="top" constant="19" id="icD-eF-hEd"/>
-                            <constraint firstItem="Mco-z9-G6C" firstAttribute="top" secondItem="0uT-jw-VF0" secondAttribute="top" constant="1" id="quz-ft-Pin"/>
-                            <constraint firstItem="0uT-jw-VF0" firstAttribute="trailing" secondItem="Mco-z9-G6C" secondAttribute="trailing" constant="262" id="xpR-xy-adD"/>
+                            <constraint firstItem="0uT-jw-VF0" firstAttribute="trailing" secondItem="Jti-VN-lF1" secondAttribute="trailing" id="L5m-Us-5ZH"/>
+                            <constraint firstItem="Jti-VN-lF1" firstAttribute="leading" secondItem="0uT-jw-VF0" secondAttribute="leading" id="LCp-sB-lAi"/>
+                            <constraint firstItem="0uT-jw-VF0" firstAttribute="bottom" secondItem="Jti-VN-lF1" secondAttribute="bottom" id="LNz-UM-RK0"/>
+                            <constraint firstItem="Jti-VN-lF1" firstAttribute="top" secondItem="0uT-jw-VF0" secondAttribute="top" id="ffh-At-Uus"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0uT-jw-VF0"/>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="0HQ-Cn-Nhh"/>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="imageView" destination="WLk-ep-0sh" id="Lew-JD-xU8"/>
+                        <outlet property="imageView" destination="Jti-VN-lF1" id="g19-zs-lDd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U3L-7z-vIx" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="7Q8-wP-TXA">
+                <tapGestureRecognizer id="Fqe-ze-yaY">
                     <connections>
-                        <action selector="faceIdDetected:" destination="8tx-dV-U2L" id="Clg-iS-rX2"/>
+                        <action selector="tappedBlue:" destination="8tx-dV-U2L" id="MeB-vg-JB6"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2310" y="86"/>
+            <point key="canvasLocation" x="2309.5999999999999" y="85.714285714285722"/>
         </scene>
-        <!--Reward View Controller-->
+        <!--Achievment View Controller-->
         <scene sceneID="sbx-a3-bHh">
             <objects>
-                <viewController storyboardIdentifier="RewardViewController" id="WXa-KT-2lU" customClass="RewardViewController" customModule="BSC_AR_DEMO" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AchievmentViewController" id="WXa-KT-2lU" customClass="AchievmentViewController" customModule="BSC_AR_DEMO" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Xf-oy-8Fb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Achievement" translatesAutoresizingMaskIntoConstraints="NO" id="lxz-ud-waG">
-                                <rect key="frame" x="0.0" y="148" width="375" height="630"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Achievement" translatesAutoresizingMaskIntoConstraints="NO" id="jas-m7-PTI">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="tGj-2s-6e1" appends="YES" id="95H-oc-H8Q"/>
+                                    <outletCollection property="gestureRecognizers" destination="YQf-3c-Q7P" appends="YES" id="b5l-Hf-RFe"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7v-C5-u03">
-                                <rect key="frame" x="16" y="45" width="99" height="54"/>
-                                <state key="normal" title="Back"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrc-vm-CoJ">
+                                <rect key="frame" x="258" y="44" width="117" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="p1q-ee-C9w" kind="presentation" id="eCb-Tp-Blj"/>
+                                    <segue destination="p1q-ee-C9w" kind="presentation" id="0EJ-JG-CGI"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="n7v-C5-u03" firstAttribute="leading" secondItem="3Xf-oy-8Fb" secondAttribute="leadingMargin" id="55f-Fg-c3s"/>
-                            <constraint firstItem="lxz-ud-waG" firstAttribute="top" secondItem="ysa-Rj-GpB" secondAttribute="top" constant="104" id="6PV-ll-0fm"/>
-                            <constraint firstItem="lxz-ud-waG" firstAttribute="bottom" secondItem="ysa-Rj-GpB" secondAttribute="bottom" id="G3z-ct-0pK"/>
-                            <constraint firstAttribute="trailing" secondItem="lxz-ud-waG" secondAttribute="trailing" id="MBo-4d-dKV"/>
-                            <constraint firstItem="n7v-C5-u03" firstAttribute="top" secondItem="ysa-Rj-GpB" secondAttribute="top" constant="1" id="MJe-r4-pv0"/>
-                            <constraint firstItem="lxz-ud-waG" firstAttribute="leading" secondItem="3Xf-oy-8Fb" secondAttribute="leading" id="SHQ-Zi-4jg"/>
-                            <constraint firstItem="ysa-Rj-GpB" firstAttribute="trailing" secondItem="n7v-C5-u03" secondAttribute="trailing" constant="260" id="oFU-7Z-t9L"/>
-                            <constraint firstItem="lxz-ud-waG" firstAttribute="top" secondItem="n7v-C5-u03" secondAttribute="bottom" constant="49" id="uHq-S1-hDw"/>
+                            <constraint firstItem="jas-m7-PTI" firstAttribute="leading" secondItem="ysa-Rj-GpB" secondAttribute="leading" id="7Of-8m-h5s"/>
+                            <constraint firstItem="ysa-Rj-GpB" firstAttribute="trailing" secondItem="jas-m7-PTI" secondAttribute="trailing" id="IFY-je-1an"/>
+                            <constraint firstItem="jas-m7-PTI" firstAttribute="top" secondItem="ysa-Rj-GpB" secondAttribute="top" id="Iag-vj-qZQ"/>
+                            <constraint firstItem="ysa-Rj-GpB" firstAttribute="bottom" secondItem="jas-m7-PTI" secondAttribute="bottom" id="tLY-dV-DpA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ysa-Rj-GpB"/>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="lxz-ud-waG" id="iuD-st-1HP"/>
+                        <outlet property="imageView" destination="jas-m7-PTI" id="zTm-o2-McA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NcC-NU-5ut" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="tGj-2s-6e1">
+                <tapGestureRecognizer id="YQf-3c-Q7P">
                     <connections>
-                        <action selector="tapClose:" destination="WXa-KT-2lU" id="eTz-Vh-rOi"/>
+                        <action selector="tapped:" destination="WXa-KT-2lU" id="foa-AG-cqB"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1583" y="86"/>
+            <point key="canvasLocation" x="1581.5999999999999" y="85.714285714285722"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Achievement" width="353" height="541"/>
-        <image name="Blue Bucks Increase-2" width="375" height="667"/>
+        <image name="Achievement" width="375" height="812"/>
+        <image name="Blue Bucks Increase-2" width="375" height="812"/>
+        <image name="Dinner Item Selected" width="375" height="812"/>
     </resources>
 </document>

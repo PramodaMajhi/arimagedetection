@@ -105,7 +105,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, UI
                     print("image defected " + imageName)
                     let cube = SCNNode()
                     cube.geometry = SCNBox(width: 0.15, height: 0.15, length: 0.15, chamferRadius: 0)
-                    cube.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "Dinner Item Selected")
+                    cube.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "Dinner Item Selected-2")
                     //UIColor.green.withAlphaComponent(0.6)
                     cube.position = SCNVector3(0, 0.2, 0.1)
                     node.addChildNode(cube)
